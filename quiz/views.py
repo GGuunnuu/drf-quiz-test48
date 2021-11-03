@@ -15,3 +15,4 @@ def randomQuiz(request, id):
     randomQuiz = random.sample(list(totalQuizs), id)
     serializer = QuizSerializer(randomQuiz, many=True)
     return Response(serializer.data)
+    
